@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motorcavera – Links Oficiais</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #f5d46b;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      font-size: 46px;
+      margin-top: 40px;
+      text-transform: lowercase;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 0 #000;
+    }
+    .avatar {
+      width: 260px;
+      border-radius: 14px;
+      border: 3px solid #f5d46b;
+      margin: 25px auto;
+      display: block;
+      box-shadow: 0 0 20px rgba(245,212,107,0.35);
+    }
+    p {
+      font-size: 18px;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+    .links {
+      max-width: 360px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    a.btn {
+      background: #f5d46b;
+      color: #000;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      box-shadow: 0 5px 0 #c9a64f;
+      transition: 0.2s;
+    }
+    a.btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 0 #c9a64f;
+    }
+    .icon {
+      width: 26px;
+      height: 26px;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>motorcavera</h1>
+
+  <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/avatar.png" class="avatar" alt="Foto Motorcavera">
+
+  <p>Escolha sua plataforma favorita e ouça agora:</p>
+
+  <div class="links">
+    <a class="btn" href="https://open.spotify.com/intl-pt/artist/30otPlMWbAPpq3WIFs4jvw" target="_blank">
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/spotify.png" class="icon"> Spotify
+    </a>
+
+    <a class="btn" href="https://www.deezer.com/br/artist/13031081" target="_blank">
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/deezer.png" class="icon"> Deezer
+    </a>
+
+    <a class="btn" href="https://www.youtube.com/@Motorcavera" target="_blank">
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/YouTube.png" class="icon"> YouTube
+    </a>
+
+    <a class="btn" href="https://soundcloud.com/motorcavera" target="_blank">
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/SoundCloud.png" class="icon"> SoundCloud
+    </a>
+
+    <a class="btn" href="https://www.instagram.com/motorcavera/" target="_blank">
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/Instagram.png" class="icon"> Instagram
+    </a>
+  </div>
+
+  <footer>© <span id="year"></span> Motorcavera – Todos os direitos reservados.</footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
