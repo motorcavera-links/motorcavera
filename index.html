@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motorcavera – Links Oficiais</title>
-
   <style>
     body {
       margin: 0;
@@ -14,32 +13,26 @@
       font-family: Arial, sans-serif;
       text-align: center;
     }
-
-    /* LOGO */
-    .logo {
-      width: 320px;
-      max-width: 90%;
-      margin: 40px auto 20px auto;
-      display: block;
+    h1 {
+      font-size: 46px;
+      margin-top: 40px;
+      text-transform: lowercase;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 0 #000;
     }
-
-    /* Avatar */
     .avatar {
       width: 260px;
       border-radius: 14px;
       border: 3px solid #f5d46b;
-      margin: 10px auto 35px auto;
+      margin: 25px auto;
       display: block;
       box-shadow: 0 0 20px rgba(245,212,107,0.35);
     }
-
     p {
       font-size: 18px;
       color: #ddd;
       margin-bottom: 30px;
     }
-
-    /* Botões */
     .links {
       max-width: 360px;
       margin: auto;
@@ -47,7 +40,6 @@
       flex-direction: column;
       gap: 18px;
     }
-
     a.btn {
       background: #f5d46b;
       color: #000;
@@ -63,19 +55,16 @@
       box-shadow: 0 5px 0 #c9a64f;
       transition: 0.2s;
     }
-
     a.btn:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 0 #c9a64f;
     }
-
-    /* Ícones SVG normalizados */
     .icon {
-      width: 26px;
-      height: 26px;
-      filter: brightness(0) saturate(100%) invert(0%);
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      display: inline-block;
     }
-
     footer {
       margin-top: 50px;
       font-size: 14px;
@@ -84,56 +73,37 @@
     }
   </style>
 </head>
-
 <body>
+  <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/tirulo%20logo.png" alt="Motorcavera Logo" class="avatar" style="width:320px; border:none; box-shadow:none; margin-top:30px;">
 
-  <!-- LOGO -->
-  <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/tirulo%20logo.png" 
-       alt="Motorcavera Logo"
-       class="logo">
+  <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/avatar.png" class="avatar" alt="Foto Motorcavera">
 
-  <!-- AVATAR -->
-  <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/avatar.png" 
-       class="avatar" alt="Foto Motorcavera">
-
-  <p> Siga, veja e ouça agora:</p>
+  <p>Ouça agora:</p>
 
   <div class="links">
-
     <a class="btn" href="https://open.spotify.com/intl-pt/artist/30otPlMWbAPpq3WIFs4jvw" target="_blank">
-      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/Spotify.svg" class="icon">
-      Spotify
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/Spotify.svg" class="icon"> Spotify
     </a>
 
     <a class="btn" href="https://www.deezer.com/br/artist/13031081" target="_blank">
-      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/deezer%201.svg" class="icon">
-      Deezer
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/deezer%201.svg" class="icon"> Deezer
     </a>
 
     <a class="btn" href="https://www.youtube.com/@Motorcavera" target="_blank">
-      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/YouTube.svg" class="icon">
-      YouTube
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/yout.svg" class="icon"> YouTube
     </a>
 
     <a class="btn" href="https://soundcloud.com/motorcavera" target="_blank">
-      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/SoundCloud.svg" class="icon">
-      SoundCloud
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/SoundCloud.svg" class="icon"> SoundCloud
     </a>
 
     <a class="btn" href="https://www.instagram.com/motorcavera/" target="_blank">
-      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/Instagram.svg" class="icon">
-      Instagram
+      <img src="https://raw.githubusercontent.com/motorcavera-links/motorcavera/main/assets/Instagram.svg" class="icon"> Instagram
     </a>
-    
   </div>
 
-  <footer>
-    © <span id="year"></span> Motorcavera – Todos os direitos reservados.
-  </footer>
+  <footer>© <span id="year"></span> Motorcavera – Todos os direitos reservados.</footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
